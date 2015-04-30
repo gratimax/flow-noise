@@ -8,7 +8,7 @@ package com.flowpowered.noise.util;
 public interface Builder<B> {
 
     /**
-     * Build the object
+     * Build the object.
      *
      * @return the built object of type B
      */

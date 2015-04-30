@@ -30,23 +30,23 @@ import com.flowpowered.noise.module.Module;
 
 public class ScaleBias extends Modifier {
 
-    // Bias to apply to the scaled output value from the source module.
-    private final double bias;
     // Scaling factor to apply to the output value from the source module.
     private final double scale;
+    // Bias to apply to the scaled output value from the source module.
+    private final double bias;
 
-    public ScaleBias(Module source, double bias, double scale) {
+    public ScaleBias(Module source, double scale, double bias) {
         super(source);
-        this.bias = bias;
         this.scale = scale;
-    }
-
-    public double getBias() {
-        return bias;
+        this.bias = bias;
     }
 
     public double getScale() {
         return scale;
+    }
+
+    public double getBias() {
+        return bias;
     }
 
     @Override

@@ -30,7 +30,7 @@ import com.flowpowered.noise.module.Module;
 
 public class Invert extends Modifier {
 
-    protected Invert(Module source) {
+    public Invert(Module source) {
         super(source);
     }
 

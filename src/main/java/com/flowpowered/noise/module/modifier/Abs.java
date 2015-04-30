@@ -30,7 +30,7 @@ import com.flowpowered.noise.module.Module;
 
 public class Abs extends Modifier {
 
-    protected Abs(Module source) {
+    public Abs(Module source) {
         super(source);
     }
 
